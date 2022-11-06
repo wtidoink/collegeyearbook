@@ -445,10 +445,14 @@
 
 .u-section-3 .u-container-layout-3 {
   padding: 10px;
+   border: 1px;
+    border-style: dashed;
 }
 
 .u-section-3 .u-container-layout-4 {
   padding: 10px;
+   border: 1px;
+    border-style: dashed;
 }
 
 .u-section-3 .u-container-layout-5 {
