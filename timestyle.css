@@ -21,7 +21,7 @@ section#timeline:before {
   margin: 0 0 0 -1px;
   width: 3px;
   min-height: 40%;
-  background: rgba(255,255,255,0.2);
+  background: black;
 }
 section#timeline article {
   width: 100%;
