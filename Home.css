@@ -8,9 +8,12 @@
 }
 
 .u-section-1 .u-image-1 {
-  min-height: 625px;
-  background-image: url("images/pexels-photo-9821204.jpeg");
+  margin-top: 50px;
+  max-height: 450px;
+  background-image: url("images/grpphoto3.jpg");
   background-position: 50% 50%;
+  width: fit-content;
+
 }
 
 .u-section-1 .u-container-layout-1 {
