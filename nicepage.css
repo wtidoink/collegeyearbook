@@ -34780,6 +34780,7 @@ a.u-button-style.u-button-style.u-text-palette-1-base.active,
 a.u-button-style.u-button-style.u-text-palette-1-base[class*="u-border-"].active {
   color: #387cbd !important;
 }
+
 a.u-button-style:hover > .u-text-hover-palette-1-base,
 a.u-button-style:hover > .u-text-hover-palette-1-base[class*="u-border-"],
 a.u-button-style.u-button-style.u-text-hover-palette-1-base:hover,
@@ -34803,6 +34804,17 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-1-base[class*="u
 .u-popupmenu-items.u-text-hover-palette-1-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-1-base .u-nav-link.active {
   color: #478ac9 !important;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+ 
+  position: relative;
+  overflow: hidden;
+  
+  
+
+}
+
 }
 .u-text-palette-1-base .u-svg-link,
 .u-text-hover-palette-1-base:hover .u-svg-link,

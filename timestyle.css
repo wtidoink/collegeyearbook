@@ -20,8 +20,8 @@ section#timeline:before {
   top: 0;
   margin: 0 0 0 -1px;
   width: 3px;
-  min-height: 40%;
-  background: black;
+  min-height: 100%;
+  background: linear-gradient(black,darkblue);
 }
 section#timeline article {
   width: 100%;
@@ -93,7 +93,8 @@ section#timeline article div.inner p {
   padding: 15px;
   margin: 0;
   font-size: 14px;
-  background: #fff;
+   background: linear-gradient(to right,#e8f48c, paleturquoise);
+
   color: #656565;
   border-radius: 0 0 6px 6px;
 }
