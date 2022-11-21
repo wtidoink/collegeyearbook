@@ -10,7 +10,7 @@ section#timeline {
   width: 80%;
   margin: 20px auto;
   position: relative;
-  height: 80%;
+  height: auto;
 }
 section#timeline:before {
   content: '';

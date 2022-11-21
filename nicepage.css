@@ -22818,7 +22818,7 @@ h6 {
 }
 .u-body {
   color: #111111;
-  background: linear-gradient(lightcoral,skyblue);
+  background: linear-gradient(90deg,skyblue,lightcoral);
   --effect-scale: 1.1;
 }
 /*end-variables color*/
