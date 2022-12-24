@@ -1,0 +1,90 @@
+/*style.css*/
+/* login page header */
+.hdl{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+  }
+  /*login page input*/
+
+  button[type= submit],[type=button]{
+  text-decoration: none;
+  background-color: cyan;
+  border:none;
+  border-radius: 5px;
+  padding:5px 5px;
+  }
+  .bs{
+    visibility: hidden;
+  }
+  .sb:hover,.bs:hover{
+  background-color: darkcyan;
+  }
+  .sb1,#rem{
+    text-align: center !important;
+  }
+  #myform,#hiddenform{
+    text-align: left;
+    padding:20px 20px 20px 15%;
+    background-color: azure;
+    border-radius: 10px;
+    border :2px solid red;
+    width: 50%;
+    box-sizing: border-box;
+    overflow: auto;
+    box-shadow: 10px 10px 2px 5px lightblue;
+    
+  }
+  input[type=email]:focus{
+    background-color: chartreuse;
+  }
+  input[type=password]:focus{
+    background-color: chartreuse;
+  }
+  table.tr{
+    padding: 10px;
+  
+  }
+  #hiddenform{
+    visibility:hidden;
+  }
+
+
+
+
+/*img form*/
+#imgform{
+  text-align: left;
+  background-color: azure;
+  border-radius: 10px;
+  border :2px solid red;
+  width: 50%;
+  box-sizing: border-box;
+  visibility: hidden;
+  margin-top: 10px;
+  z-index: 10;
+}
+.simg{
+  text-decoration: none;
+  background-color: cyan;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+.simg:hover{
+  background-color: darkcyan;
+}
+label {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+label:hover {
+  filter: grayscale(0);
+}
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"]:checked + label {
+  filter: grayscale(0);
+}

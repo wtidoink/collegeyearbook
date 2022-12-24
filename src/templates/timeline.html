@@ -1,0 +1,169 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>timelinep page</title>
+  <style>  .body{
+                 height: 100% !important;}
+               a.my-button{
+ background: linear-gradient(to right,#196BCA ,#6433E0);
+ background-color: #196BCA;
+ color: #fff;
+ font-family: Trebuchet MS;
+ font-size: 12px;
+ font-weight: 800;
+ font-style: normal;
+ text-decoration: none;
+ padding: 12px 14px;
+ border: 0px solid #000;
+ border-radius: 8px;
+ display: inline-block;
+}
+a.my-button:hover{
+ background: linear-gradient(to right,#5482d0 ,#7d5ee3);
+ background-color: #5482d0;
+}
+a.my-button:active{
+ transform: scale(0.95);
+}
+
+</style>
+              <link rel="stylesheet" href="../static/Blog-Template.css" media="screen">  
+  <link rel="stylesheet" type="text/css" href="../static/timestyle.css">
+  <link rel="stylesheet" href="../static/nicepage.css" media="screen">
+<link rel="stylesheet" href="../static/Home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../static/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../static/nicepage.js" defer=""></script>
+</head>
+<body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-e80a"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://nicepage.com" class="u-image u-logo u-image-1">
+          <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ url_for('views.hello_world')}}" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ url_for('views.show_people')}}" style="padding: 10px 20px;">People</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ url_for('views.show_timeline')}}" style="padding: 10px 20px;">Timeline</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('auth.logout')}}">Logout</a>
+</li>
+</ul>
+          </div>
+          <div class="u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('views.hello_world')}}">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('views.show_people')}}">People</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('views.show_timeline')}}">Timeline</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('auth.logout')}}">Logout</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+
+
+<section id="timeline">
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">21<sup>st</sup></span>
+        <span class="month">Jun</span>
+        <span class="year">2022</span>
+      </span>
+      <h2>International Yoga day</h2>
+      <p> On  the occassion of international yoga day we gathered to improve our health through......
+      <a class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-3" href="{{url_for('views.show_blog1')}}">Read More</a></p>
+      
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">18<sup>th</sup></span>
+        <span class="month">July</span>
+        <span class="year">2022</span>
+      </span>
+      <h2>Ideation Camp</h2>
+      <p>A big a day for our uni as we celebrated ideas and entrepreunership by....<a href="{{url_for('views.show_blog2')}}" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-3"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json-->Read More<!--/blog_post_readmore_content--></a></p>
+    </div>
+  </article>
+  
+    <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">15<sup>th</sup></span>
+        <span class="month">August</span>
+        <span class="year">2022</span>
+      </span>
+      <h2>Independence day</h2>
+      <p>On  the  auspicious occasion of 75th anniversary (Diamond jubliee) of independence day,...<a href="{{url_for('views.show_blog3')}}" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-3"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json-->Read More<!--/blog_post_readmore_content--></a></p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">21<sup>st</sup></span>
+        <span class="month">Oct</span>
+        <span class="year">2022</span>
+      </span>
+      <h2>Hackathon</h2>
+      <p>A festival for the tech geeks and new age entrepreuners as we celebrated a week long ...<a class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-3" href="{{url_for('views.show_blog4')}}">Read More</a></p>
+    </div>
+  </article>
+<!--  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">26<sup>th</sup></span>
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">26<sup>th</sup></span>
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">28<sup>th</sup></span>
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>-->
+</section>
+
+</body>
+<footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-5a6a"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Class year book<br>
+        </p>
+      </div></footer>
+
+
+</html>
